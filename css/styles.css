@@ -17,6 +17,14 @@ header {
 
 .right-corner {
     margin-right: 60px;
+    color: gray;
+    text-decoration: none;
+}
+
+.right-corner-b {
+    margin-right: 60px;
+    color: gray;
+    text-decoration: none;
 }
 
 #logo {
@@ -24,16 +32,77 @@ header {
     height: 60px;
 }
 
+.container a {
+
+  }
 
 /* H1 + H2 */
 
 h1 {
     font-size: 30px;
     font-weight: bold;
+    margin-left: 40px;
 }
 
 h2 {
     font-size: 21px;
     font-weight: lighter;
     margin-top: -12px;
+    margin-left: 40px;
+}
+
+/* SEARCH BAR */
+
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.search-bar {
+width: 400px;
+border-radius: 15px;
+border: 1.5px solid #F2F2F2
+}
+
+.icon-size {
+    height: 50px;
+    width:  50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.search {
+font-size: 18px;
+font-weight: bold;
+color: black;
+height: 50px;
+width: 230px;
+}
+
+.border-none {
+    border: none;
+}
+
+.grey-back {
+    background-color: #f2f2f2;
+  }
+
+.blue-back {
+    background-color: #0065FC;
+}
+.btn {
+height: 50px;
+width: 140px;
+cursor: pointer;
+border-radius: 0 10px 10px 0;
+font-size: 18px;
+font-weight: bold;
+color: white;
+}
+
+.search-padding {
+    padding-left: 15px;
+}
+.section-search {
+    margin-left: 40px
 }
