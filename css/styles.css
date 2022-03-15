@@ -1,0 +1,39 @@
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-right {
+    list-style: none;
+    display: flex;
+}
+
+.right-corner {
+    margin-right: 60px;
+}
+
+#logo {
+    margin-left: 60px;
+    height: 60px;
+}
+
+
+/* H1 + H2 */
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: lighter;
+    margin-top: -12px;
+}
