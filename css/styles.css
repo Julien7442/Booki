@@ -1,5 +1,6 @@
+html,
 body {
-	font-family: "Raleway", sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 .bold {
@@ -18,9 +19,13 @@ body {
     align-items: center;
     }
 
+    .no-hyper {
+        text-decoration: none;
+    }
+
 /* HEADER */
 
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,10 +50,6 @@ header {
     margin-left: 60px;
     height: 60px;
 }
-
-.container a {
-
-  }
 
 /* H1 + H2 */
 
@@ -136,9 +137,9 @@ color: white;
     color: #0065FC;
 }
 
-/* NAV */
+/* header */
 
-.nav-main {
+.header-main {
     border: 2px solid #d4d2d2;
     height: 50px;
     border-radius: 30px;
@@ -149,7 +150,7 @@ color: white;
     width: 50px;
   }
 
-.circle-nav {
+.circle-header {
     border-radius: 25px;
     margin-left: -2px;
     width: 52px;
@@ -159,7 +160,7 @@ color: white;
     background-color: #DEEBFF;
 }
 
-.nav-font {
+.header-font {
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -169,15 +170,15 @@ color: white;
     font-style: bold;
 }
 
-.nav-margin {
+.header-margin {
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
-.filtre-texte-icons:hover > .nav-hover {
+.header-main:hover > .header-font {
     color: #0065fc;
   }
-  .filtre-texte-icons:hover > .circle-nav {
+.header-main:hover > .circle-header {
     color: white;
     background-color: #0065fc;
   }
@@ -199,4 +200,46 @@ color: white;
 
 .test {
     display: inline-block;
+}
+
+/* LOCATION CARDS */
+
+.card {
+    width: 400px; /*1*/
+    margin: 0px auto; /*2*/
+    background-color: white; /*3*/
+    box-shadow: 0px 5px 20px #999; /*4*/
+  }
+  .card a { /*5*/
+    color: #333; 
+    text-decoration: none;
+  }
+  .card:hover .card-image img { /*6*/
+    width: 160%;
+    filter: grayscale(0);
+  }
+
+  .card-image {
+    height: 250px;/*1*/
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
+  }
+  .card-image img {
+    width: 150%;/*4*/
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);/*6*/
+      /*7 - Transition */
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+  .card-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
 }
