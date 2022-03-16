@@ -1,6 +1,9 @@
-html,
-body {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+/* WILDCARD */
+* {
+  font-family: Raleway, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .bold {
@@ -23,32 +26,34 @@ body {
         text-decoration: none;
     }
 
-/* HEADER */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* NAV */
 
-.top-right {
-    list-style: none;
-    display: flex;
-}
-
-.right-corner {
-    margin-right: 60px;
-}
-
-.right-corner-b {
-    margin-right: 60px;
-    color: gray;
-    text-decoration: none;
+a {
+color: inherit;
+text-decoration: none;
 }
 
 #logo {
-    margin-left: 60px;
+    margin-right: auto;
+    padding-left: 50px;
     height: 60px;
+}
+
+nav a {
+    padding: 30px;
+    padding-right: 50px;
+}
+
+nav {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a:hover {
+border-top: 3px solid #0065FC;
 }
 
 /* H1 + H2 */
@@ -72,12 +77,6 @@ h2 {
 width: 400px;
 border-radius: 15px;
 border: 1.5px solid #ecebeb
-}
-
-.icon-size {
-    height: 50px;
-    width:  50px;
-    border-radius: 10px 0 0 10px;
 }
 
 .search {
@@ -137,7 +136,7 @@ color: white;
     color: #0065FC;
 }
 
-/* header */
+/* HEADER */
 
 .header-main {
     border: 2px solid #d4d2d2;
