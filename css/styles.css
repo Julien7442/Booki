@@ -2,8 +2,16 @@
 
 /* WILDCARD */
 * {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", "Arial", "sans-serif";
   box-sizing: border-box;
+}
+
+/* OTHERS */
+
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .bold {
@@ -13,6 +21,12 @@
 .flex-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-around {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -26,6 +40,14 @@
         text-decoration: none;
     }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+   .sub-nav {
+   order: 1;
+   flex-basis: 100%;
+   }
+}
 
 /* NAV */
 
@@ -36,13 +58,12 @@ text-decoration: none;
 
 #logo {
     margin-right: auto;
+    height: 50px;
     padding-left: 50px;
-    height: 60px;
 }
 
 nav a {
-    padding: 30px;
-    padding-right: 50px;
+    padding: 40px;  
 }
 
 nav {
@@ -52,9 +73,19 @@ nav {
     justify-content: flex-end;
 }
 
-nav a:hover {
-border-top: 3px solid #0065FC;
+.sub-nav {
+  display: flex;
 }
+
+.sub-nav a {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+nav a:hover {
+  border-top: 3px solid #0065FC;
+  color: #0065FC;
+  }
 
 /* H1 + H2 */
 
@@ -75,7 +106,7 @@ h2 {
 
 .search-bar {
 width: 400px;
-border-radius: 15px;
+border-radius: 20px;
 border: 1.5px solid #ecebeb
 }
 
@@ -102,8 +133,7 @@ width: 230px;
 height: 50px;
 width: 140px;
 cursor: pointer;
-border-radius: 0 10px 10px 0;
-font-size: 18px;
+border-radius: 0 12px 12px 0;
 font-weight: bold;
 color: white;
 }
@@ -147,6 +177,7 @@ color: white;
 .icon-size {
     height: 50px;
     width: 50px;
+    border-radius: 12px 0 0 12px;
   }
 
 .circle-header {
@@ -165,7 +196,6 @@ color: white;
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
     color: black;
-    font-size: 18px;
     font-style: bold;
 }
 
@@ -200,6 +230,43 @@ color: white;
 .test {
     display: inline-block;
 }
+
+/* MAIN */
+
+.main-size {
+  flex: 2;
+  height: 650px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.popular-size {
+  flex: 1;
+  height: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.accommodation {
+  background-image: url(../images/hebergements/4_small/cannebiere.jpg);
+  width: 100px;
+  height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* LOCATION CARDS */
 
