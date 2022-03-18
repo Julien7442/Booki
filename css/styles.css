@@ -10,7 +10,9 @@
 
 :root {
   --blue: #0065FC;
+  --lightblue: #DEEBFF;
   --grey: #f2f2f2;
+  --darkgrey :#d9d9d9;
 }
 
 .bold {
@@ -39,6 +41,7 @@
   }
     .no-hyper {
         text-decoration: none;
+        color: inherit;
     }
 
     .border-none {
@@ -55,11 +58,6 @@
 
 /* NAV */
 
-a {
-color: inherit;
-text-decoration: none;
-}
-
 #logo {
   margin-right: auto;
   height: 50px;
@@ -68,7 +66,10 @@ text-decoration: none;
 
 
 nav a {
-    padding: 40px;  
+    padding: 40px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 nav {
@@ -88,8 +89,8 @@ nav {
 }
 
 nav a:hover {
-  border-top: 3px solid #0065FC;
-  color: #0065FC;
+  border-top: 3px solid var(--blue);
+  color: var(--blue);
   }
 
   @media (max-width: 768px) {
@@ -108,23 +109,21 @@ nav a:hover {
 h1 {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 40px;
 }
 
 h2 {
     font-size: 21px;
     font-weight: lighter;
-    margin-top: -12px;
-    margin-left: 40px;
 }
 
 .top-h1 h1 {
-  margin-bottom: 5px;
+  padding-left: 40px;
 }
 
 .top-h1 p {
   margin-bottom: 25px;
 }
+
 /* SEARCH BAR */
 
 .search-bar > * {
@@ -265,91 +264,136 @@ margin-bottom: 30px;
 
 .icon-circle {
     border-radius: 25px;
-    margin-right: 15px;
-    width: 20px;
-    height: 20px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #d4d2d2;
-}
-
-.test {
-    display: inline-block;
 }
 
 /* MAIN */
 
-.main-size {
-  flex: 2;
-  height: 650px;
-  margin-right: 20px;
-  border-radius: 10px;
+.apartments-main { /* Disposition de la partie central et du gap entre les deux parties */
+display: flex;
+gap: 10px;
+margin-top: 30px;
 }
 
-.popular-size {
-  flex: 1;
-  height: 650px;
-  margin-left: 20px;
-  border-radius: 10px;
+.apartments-main > div { /* Ordre de priorité, background gris et borders*/
+  background-color: var(--grey);
+  padding-bottom: 50px;
+  border-radius: 25px;
+  }
+
+.apartments-main .marseille {
+  flex-basis: 66%;
 }
 
-.accommodation {
-  background-image: url(../images/hebergements/4_small/cannebiere.jpg);
-  width: 100px;
+.apartments-main .popular {
+  flex-basis: 33%;
+}
+
+.apartments-main .marseille a { /* Tout les "a"  de "apartments-main" et "marseille" */
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  padding-left: 20px;
+}
+
+.apartments-main .marseille h4 { /* Tout les "a"  de "apartments-main" et "marseille" */
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.apartments-main-list { /* Disposition des cartes */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .apartments-main {
+  flex-direction: column;
+   }
+   .popular {
+     order: -1; /* Populaire passe devant hébergement grace à order */
+   }
+}
+
+/* POPULAR */
+
+.apartments-main .flex-popular { /* Cartes de la partie populaire */
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* APARTMENTS CARDS */
+
+.blue {
+  color: var(--blue)
+}
+
+.grey {
+  color: var(--darkgrey);
+}
+
+.card-apartment { /* Template du contour de l'image et du texte */
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 0 16px #8d8d8d;
+  margin: 14px;
+}
+
+.card-apartment img { /* S'applique à toutes les images dans card-apartment */
+  border-radius: 20px 20px 0 0;
+  width: 250px;
   height: 120px;
+  object-fit: cover;
+  object-position: center;
 }
 
+.card-apartment p,
+.card-apartment h5,
+.popular-text p,
+.popular-text h5 {
+margin: 5px;
+}
 
+/* POPULAR CARDS */
 
+.card-popular {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 16px #8d8d8d;
+  margin: 20px;
+  min-width: 300px;
 
+}
 
+.card-popular img {
+  height: 150px;
+  width: 125px;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+}
 
+.popular-text {
+  display: flex;
+  flex-direction: column;
+}
 
+.card-popular .stars {
+margin-top: auto;
+}
 
-
-
-
-
-
-
-
-
-/* LOCATION CARDS */
-
-.card {
-    width: 400px; /*1*/
-    margin: 0px auto; /*2*/
-    background-color: white; /*3*/
-    box-shadow: 0px 5px 20px #999; /*4*/
-  }
-  .card a { /*5*/
-    color: #333; 
-    text-decoration: none;
-  }
-  .card:hover .card-image img { /*6*/
-    width: 160%;
-    filter: grayscale(0);
-  }
-
-  .card-image {
-    height: 250px;/*1*/
-    position: relative;/*2*/
-    overflow: hidden;/*3*/
-  }
-  .card-image img {
-    width: 150%;/*4*/
-      /*5 - Méthode de centrage en fonction de la taille de l'image */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: grayscale(1);/*6*/
-      /*7 - Transition */
-    transition-property: filter width; 
-    transition-duration: .3s;
-    transition-timing-function: ease;
-  }
-
-  .card-body {
-    text-align:center;  /*1*/
-  padding: 15px 20px; /*2*/
-  box-sizing: border-box; /*3*/
+.popular-text h5 {
+  margin-top: 10px;
+   padding: 0;
 }
