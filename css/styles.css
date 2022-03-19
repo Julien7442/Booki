@@ -33,7 +33,6 @@
 
   .center {
     display: flex;
-    justify-content: center;
     align-items: center;
     }
   .wrap {
@@ -61,7 +60,7 @@
 #logo {
   margin-right: auto;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 
@@ -114,10 +113,6 @@ h1 {
 h2 {
     font-size: 21px;
     font-weight: lighter;
-}
-
-.top-h1 h1 {
-  padding-left: 40px;
 }
 
 .top-h1 p {
@@ -230,6 +225,7 @@ margin-bottom: 30px;
     border-radius: 25px;
     color: var(--blue);
     background-color: #DEEBFF;
+    justify-content: center;
 }
 
 .header-font {
@@ -262,19 +258,25 @@ margin-bottom: 30px;
     align-items: center;
 }
 
+.info {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .icon-circle {
     border-radius: 25px;
     margin-right: 10px;
     width: 30px;
     height: 30px;
     border: 1px solid #d4d2d2;
+    justify-content: center;
 }
 
 /* MAIN */
 
 .apartments-main { /* Disposition de la partie central et du gap entre les deux parties */
 display: flex;
-gap: 10px;
+gap: 30px;
 margin-top: 30px;
 }
 
@@ -296,20 +298,23 @@ margin-top: 30px;
   font-weight: bold;
   text-decoration: none;
   color: inherit;
-  padding-left: 20px;
+  padding-left: 140px;
 }
 
 .apartments-main .marseille h4 { /* Tout les "a"  de "apartments-main" et "marseille" */
   font-weight: bold;
-  padding-left: 20px;
+  padding-left: 140px;
+  margin-top: 40px;
 }
 
 .apartments-main-list { /* Disposition des cartes */
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-around;
-  margin-bottom: 40px;
+  row-gap: 5px;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: -25px;
 }
 
 @media (max-width: 768px) {
@@ -328,6 +333,7 @@ margin-top: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 /* APARTMENTS CARDS */
@@ -365,19 +371,25 @@ margin: 5px;
 
 /* POPULAR CARDS */
 
+.popular {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-popular {
   display: flex;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 16px #8d8d8d;
   margin: 20px;
-  min-width: 300px;
+  min-width: 150px;
+  max-height: 175px;
 
 }
 
 .card-popular img {
-  height: 150px;
-  width: 125px;
+  height: 175px;
+  width: 150px;
   border-radius: 20px 0 0 20px;
   object-fit: cover;
   object-position: center;
@@ -396,4 +408,16 @@ margin-top: auto;
 .popular-text h5 {
   margin-top: 10px;
    padding: 0;
+}
+
+.popular h4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+body
+{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
 }
