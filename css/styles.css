@@ -15,8 +15,11 @@
   --darkgrey :#d9d9d9;
 }
 
-.bold {
-    font-family: bold;
+body
+{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .flex-between {
@@ -35,16 +38,30 @@
     display: flex;
     align-items: center;
     }
+
   .wrap {
     flex-wrap: wrap;
   }
-    .no-hyper {
+  .no-hyper {
         text-decoration: none;
         color: inherit;
     }
 
-    .border-none {
+  .border-none {
       border: none;
+  }
+
+  .colmun-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .grey-back {
@@ -282,39 +299,39 @@ margin-top: 30px;
 
 .apartments-main > div { /* Ordre de priorité, background gris et borders*/
   background-color: var(--grey);
-  padding-bottom: 50px;
   border-radius: 25px;
   }
 
 .apartments-main .marseille {
-  flex-basis: 66%;
+  flex-basis: 73%;
 }
 
 .apartments-main .popular {
-  flex-basis: 33%;
+  flex-basis: 27%;
 }
 
 .apartments-main .marseille a { /* Tout les "a"  de "apartments-main" et "marseille" */
   font-weight: bold;
   text-decoration: none;
   color: inherit;
-  padding-left: 140px;
+  padding-left: 60px;
+  font-size: 18px;
 }
 
 .apartments-main .marseille h4 { /* Tout les "a"  de "apartments-main" et "marseille" */
   font-weight: bold;
-  padding-left: 140px;
-  margin-top: 40px;
+  padding-left: 60px;
+  margin-bottom: 20px;
 }
 
 .apartments-main-list { /* Disposition des cartes */
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  row-gap: 5px;
-  gap: 5px;
-  justify-content: center;
-  margin-bottom: 30px;
-  margin-top: -25px;
+  gap: 30px;
+  justify-content:center;
+  margin-bottom: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 @media (max-width: 768px) {
@@ -329,11 +346,13 @@ margin-top: 30px;
 /* POPULAR */
 
 .apartments-main .flex-popular { /* Cartes de la partie populaire */
-  gap: 10px;
+  gap: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
 }
 
 /* APARTMENTS CARDS */
@@ -349,17 +368,22 @@ margin-top: 30px;
 .card-apartment { /* Template du contour de l'image et du texte */
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
   box-shadow: 0 0 16px #8d8d8d;
-  margin: 14px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 300px;
 }
 
 .card-apartment img { /* S'applique à toutes les images dans card-apartment */
   border-radius: 20px 20px 0 0;
-  width: 250px;
-  height: 120px;
   object-fit: cover;
   object-position: center;
+  max-height: 130px;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
 }
 
 .card-apartment p,
@@ -376,19 +400,21 @@ margin: 5px;
   flex-direction: column;
 }
 
+.flex-popular {
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+
 .card-popular {
   display: flex;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 16px #8d8d8d;
-  margin: 20px;
-  min-width: 150px;
-  max-height: 175px;
-
+  max-height: 150px;
 }
 
 .card-popular img {
-  height: 175px;
+  height: 150px;
   width: 150px;
   border-radius: 20px 0 0 20px;
   object-fit: cover;
@@ -407,17 +433,62 @@ margin-top: auto;
 
 .popular-text h5 {
   margin-top: 10px;
-   padding: 0;
 }
 
 .popular h4 {
   display: flex;
   justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
-body
-{
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
+
+/* ACTIVITY */
+
+.activity {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.activity-block {
+  width: 100%;
+  height: 600px;
+}
+
+.activity1-size {
+  width: 20%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px var(--grey);
+}
+
+.activity h5 {
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.activity-img1 {
+  background-image: url(../images/activites/4_small/vieuxport.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity-img2 {
+  background-image: url(../images/activites/4_small/pomegues.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity-img3 {
+  background-image: url(../images/activites/4_small/frioul.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
 }
