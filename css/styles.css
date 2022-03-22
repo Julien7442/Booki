@@ -8,21 +8,36 @@
 
 /* OTHERS */
 
-:root {
+:root {  /* Colors */
   --blue: #0065FC;
   --lightblue: #DEEBFF;
   --grey: #f2f2f2;
   --darkgrey :#d9d9d9;
 }
 
-body
-{
-    width:90%;
+nav {
+    width:90%;  /* center element on page */
     margin-left:auto;
     margin-right:auto;
 }
 
-.flex-between {
+header {
+  width:90%;  /* center element on page */
+  margin-left:auto;
+  margin-right:auto;
+}
+
+main {
+  width:90%;  /* center element on page */
+  margin-left:auto;
+  margin-right:auto;
+}
+
+html {  /* Smooth redirection */
+  scroll-behavior: smooth;
+}
+
+  .flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +57,7 @@ body
   .wrap {
     flex-wrap: wrap;
   }
+
   .no-hyper {
         text-decoration: none;
         color: inherit;
@@ -64,14 +80,6 @@ body
     justify-content: space-between;
   }
   
-  .grey-back {
-      background-color: #f2f2f2;
-    }
-  
-  .blue-back {
-      background-color: #0065FC;
-  }
-
 /* NAV */
 
 #logo {
@@ -79,7 +87,6 @@ body
   height: 50px;
   padding-left: 20px;
 }
-
 
 nav a {
     padding: 40px;
@@ -93,15 +100,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-.sub-nav {
-  display: flex;
-}
-
-.sub-nav a {
-  flex-basis: 50%;
-  text-align: center;
 }
 
 nav a:hover {
@@ -125,6 +123,7 @@ nav a:hover {
 h1 {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 6px;
 }
 
 h2 {
@@ -134,6 +133,8 @@ h2 {
 
 .top-h1 p {
   margin-bottom: 25px;
+  margin-top: 6px;
+  font-size: 22px;
 }
 
 /* SEARCH BAR */
@@ -454,7 +455,6 @@ margin-top: auto;
   padding-right: 35px;
 }
 
-
 /* ACTIVITY */
 
 .activity {
@@ -565,4 +565,27 @@ margin-top: auto;
   transform: scale(1.02);
   transition:all 400ms ease;
   cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  height: 250px;
+  margin-top: 80px;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-size {
+  height: 150px;
+}
+
+.footer-margin1 {
+  margin-left: 5%;
+}
+
+.footer-margin2 {
+  margin-right: 25%;
 }
