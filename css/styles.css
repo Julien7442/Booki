@@ -376,6 +376,12 @@ margin-top: 30px;
   max-height: 300px;
 }
 
+.card-apartment:hover {
+    transform: scale(1.02);
+    transition:all 400ms ease;
+    cursor: pointer;
+}
+
 .card-apartment img { /* S'applique à toutes les images dans card-apartment */
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -413,6 +419,12 @@ margin: 5px;
   max-height: 150px;
 }
 
+.card-popular:hover {
+  transform: scale(1.02);
+  transition:all 400ms ease;
+  cursor: pointer;
+}
+
 .card-popular img {
   height: 150px;
   width: 150px;
@@ -446,7 +458,7 @@ margin-top: auto;
 /* ACTIVITY */
 
 .activity {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 50px;
 }
 
@@ -455,16 +467,37 @@ margin-top: auto;
   height: 600px;
 }
 
+.activity-block-other {
+  width: 23%;
+  height: 600px;
+}
+
 .activity1-size {
-  width: 20%;
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px var(--grey);
+}
+
+.activity-other {
+  width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 5px var(--grey);
 }
 
 .activity h5 {
-  font-weight: bold;
-  padding-left: 15px;
+  font-weight: 800;
+  margin-bottom: 30px;
 }
+
+  .activity-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  width: 95%;
+}
+
+/* ACTIVITY IMAGES */
 
 .activity-img1 {
   background-image: url(../images/activites/4_small/vieuxport.jpg);
@@ -480,7 +513,7 @@ margin-top: auto;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 530px;
+  height: 250px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -489,6 +522,47 @@ margin-top: auto;
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity-img4 {
+  background-image: url(../images/activites/4_small/calanques.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   height: 530px;
   border-radius: 15px 15px 0 0;
+}
+
+.activity-img5 {
+  background-image: url(../images/activites/4_small/notredame.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity-img6 {
+  background-image: url(../images/activites/4_small/longchamp.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity1-size:hover {
+  color: var(--blue);
+  transform: scale(1.02);
+  transition:all 400ms ease;
+  cursor: pointer;
+}
+
+.activity-other:hover {
+  color: var(--blue);
+  transform: scale(1.02);
+  transition:all 400ms ease;
+  cursor: pointer;
 }
