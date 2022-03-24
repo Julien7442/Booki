@@ -16,19 +16,19 @@ box-sizing: border-box;
 }
 
 nav {
-    width:90%;  /* center element on page */
-    margin-left:auto;
-    margin-right:auto;
-}
-
-header {
 width:90%;  /* center element on page */
 margin-left:auto;
 margin-right:auto;
 }
 
+header {
+width:90%;  
+margin-left:auto;
+margin-right:auto;
+}
+
 main {
-width:90%;  /* center element on page */
+width:90%;  
 margin-left:auto;
 margin-right:auto;
 }
@@ -180,7 +180,7 @@ padding: 18px 18px;
 
 .search-bar {
 display: flex;
-margin-bottom: 30px;
+margin-bottom: 40px;
 }
 
 .search-bar i {
@@ -312,7 +312,7 @@ align-items: center;
 .info {
 display: flex;
 justify-content: flex-start;
-margin-bottom: 20px;
+margin-bottom: 15px;
 }
 
 .icon-circle {
@@ -369,53 +369,7 @@ padding-bottom: 8px;
 }
 
 .apartment-img1 {
-background-image: url(../images/hebergements/4_small/cannebiere.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 150px;
-border-radius: 15px 15px 0 0;
-}
-
-.apartment-img2 {
-background-image: url(../images/hebergements/4_small/port.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 150px;
-border-radius: 15px 15px 0 0;
-}
-
-.apartment-img3 {
-background-image: url(../images/hebergements/4_small/mouettes.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 150px;
-border-radius: 15px 15px 0 0;
-}
-
-.apartment-img4 {
-background-image: url(../images/hebergements/4_small/mer.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 150px;
-border-radius: 15px 15px 0 0;
-}
-
-.apartment-img5 {
-background-image: url(../images/hebergements/4_small/le_panier.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 150px;
-border-radius: 15px 15px 0 0;
-}
-
-.apartment-img6 {
-background-image: url(../images/hebergements/4_small/amina.jpg);
-background-size: cover;
+object-fit: cover;
 background-position: center;
 width: 100%;
 height: 150px;
@@ -468,53 +422,34 @@ background-color: white;
 height: auto;
 padding: 5px;
 border-radius: 20px;
-margin-left: 35px;
-margin-right: 35px;
+margin-right: 5%;
+margin-left: 5%;
 }
 
 .popular-container-1-2 {
-margin-bottom: 22px;
+margin-bottom: 30px;
 }
 
 .popular-detail {
-width: 60%;
-margin-right: 50px;
-padding-left: 15px;
+width: 40%;
+padding-left: 5%;
 }
 
 .popular-img1 {
-background-image: url(../images/hebergements/4_small/soleil.jpg);
+object-fit: cover;
 background-size: cover;
 background-position: center;
-width: 40%;
-height: 170px;
-border-radius: 15px 0 0 15px;
-}
-
-.popular-img2 {
-background-image: url(../images/hebergements/4_small/eau.jpg);
-background-size: cover;
-background-position: center;
-width: 40%;
-height: 170px;
-border-radius: 15px 0 0 15px;
-}
-
-.popular-img3 {
-background-image: url(../images/hebergements/4_small/bleu_blanc.jpg);
-background-size: cover;
-background-position: center;
-width: 40%;
-height: 170px;
+width: 35%;
+height: 160px;
 border-radius: 15px 0 0 15px;
 }
 
 .popular-block p {
-margin-top: -10px;
+margin-top: 5px;
 }
 
 .margin-stars {
-margin-top: 80px;
+margin-top: 25%;
 }
 
 .popular-detail p {
@@ -522,8 +457,7 @@ margin-bottom: 5px;
 }
 
 .popular-detail h3 {
-margin-top: -10px;
-padding-top: 10px;
+margin: 0;
 }
 
 .popular-title {
@@ -549,7 +483,6 @@ transform: scale(1.02);
 transition:all 400ms ease;
 cursor: pointer;
 }
-
 
 /* ACTIVITY */
 
@@ -596,7 +529,7 @@ width: 95%;
 /* ACTIVITY IMAGES */
 
 .activity-img1 {
-background-image: url(../images/activites/4_small/vieuxport.jpg);
+object-fit: cover;
 background-size: cover;
 background-position: center;
 width: 100%;
@@ -605,7 +538,7 @@ border-radius: 15px 15px 0 0;
 }
 
 .activity-img2 {
-background-image: url(../images/activites/4_small/pomegues.jpg);
+object-fit: cover;
 background-size: cover;
 background-position: center;
 width: 100%;
@@ -614,34 +547,7 @@ border-radius: 15px 15px 0 0;
 }
 
 .activity-img3 {
-background-image: url(../images/activites/4_small/frioul.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 150px;
-border-radius: 15px 15px 0 0;
-}
-
-.activity-img4 {
-background-image: url(../images/activites/4_small/calanques.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 530px;
-border-radius: 15px 15px 0 0;
-}
-
-.activity-img5 {
-background-image: url(../images/activites/4_small/notredame.jpg);
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 250px;
-border-radius: 15px 15px 0 0;
-}
-
-.activity-img6 {
-background-image: url(../images/activites/4_small/longchamp.jpg);
+object-fit: cover;
 background-size: cover;
 background-position: center;
 width: 100%;
@@ -686,7 +592,50 @@ margin-left: 5%;
 margin-right: 25%;
 }
 
+.footer p:hover {
+color: var(--blue);
+transform: scale(1.02);
+cursor: pointer;
+}
+
 /* RESPONSIVE */
+
+/* 1400 */
+
+@media screen and (max-width: 1500px) {
+.popular-img3 {
+object-fit: cover;
+background-position: center;
+width: 35%;
+height: 170px;
+border-radius: 15px 0 0 15px;
+}
+.popular-size {
+min-height: auto;
+padding: 20px;
+}
+
+#hebergements {
+flex-direction: column-reverse;
+width: 100%;
+}
+
+.popular-block {
+flex: none;
+width: 100%;
+margin-left: 0;
+padding: 0;
+}
+
+.apartment-block {
+flex: none;
+width: 100%;
+margin-right: 0;
+margin-top: 50px;
+padding: 5%;
+}
+}
+
 /* 1280 */
 
 @media screen and (max-width: 1328px) {
@@ -713,14 +662,14 @@ width: 100%;
 margin-right: 0;
 margin-top: 50px;
 padding: 5%;
-    }
+}
 }
 /* 1078 FILTERS */
 
 @media screen and (max-width: 1078px) {
-    .margin-filter-responsive {
+.margin-filter-responsive {
 margin: 10px;
-    }
+}
 } 
 
 /* 848 */
@@ -737,6 +686,16 @@ width: 100%;
 margin-right: 0;
 margin-top: 50px;
 height: auto;
+background-color: transparent;
+}
+
+.apartment-size h3 {
+padding-left: 0;
+padding-bottom: 15px;
+}
+
+.show-more {
+padding-left: 0;
 }
 
 .apartment-lign-1 {   
@@ -748,6 +707,7 @@ flex-direction: column;
 .apartment-container {
 width: 100%;
 margin-bottom: 50px;
+box-shadow: 5px 5px 5px 5px var(--grey);
 }
 .apartment-detail {
 min-height: auto;
@@ -767,9 +727,9 @@ height: auto;
 .activity-other {
 margin-bottom: 50px;
 }
-.activity-img1, .activity-img2, .activity-img3, .activity-img4, .activity-img5, .activity-img6 {
+.activity-img1, .activity-img2, .activity-img3 {
 height: 200px;
-    }
+}
 }
 
 /* MOBILE 768 */
@@ -783,11 +743,10 @@ padding: 0;
 .mobile-nav {
 flex-direction: row;
 width: 100%;
-flex-wrap: wrap;
 }
 
 h1 {
-    padding-bottom: 10px;
+padding-bottom: 10px;
 }
 
 #logo {
@@ -812,5 +771,12 @@ height: auto;
 }
 .footer div {
 margin: 5%;
-    }
+}
+}
+
+/* MOBILE 600 */
+
+.activity-block {
+margin: 5%;
+width: 90%;
 }

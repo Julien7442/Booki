@@ -7,13 +7,14 @@
 	integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
 	crossorigin="anonymous"/>
 	<title>Booki</title>
+	<link rel="shortcut icon" href="../images/Booki.png" /> <!--Logo onglet-->
 	<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 	<nav>
 		<img id="logo" src="../images/Booki.png" alt="Logo agence" class="Booki"> <!--Logo-->
 		<div class="flex-around mobile-nav"> <!--Navigation-->
-    		<a href="#Hebergements">Hébergements</a>
+    		<a href="#hebergements">Hébergements</a>
     		<a href="#Activites">Activités</a>
 		</div>
 	</nav>
@@ -24,7 +25,7 @@
 	</div>
 		<div class="search-bar"> <!--Bar de recherche-->
 			<i class="fas fa-map-marker-alt" style="font-size: 20px"></i>
-			<input class="" type="search"placeholder="Marseille, France"/>
+			<input class="" type="search" placeholder="Marseille, France"/>
 			<button>
 				<span class="search-responsive">Rechercher</span>
 				<i class="fas fa-search"></i>
@@ -36,34 +37,34 @@
 				<!--div1-->
 				<div class="flex-around">
 					<div class="header-main flex-between">
-					<i class="fa-solid fa fa-money-bill-wave circle-header center" style="font-size: 20px"></i>
-				<div class="header-font align-center">Économique</div>
-			</div>
-				<div class="header-main flex-between">
-					<i class="fa-solid fa fa-child circle-header center" style="font-size: 20px"></i>
+						<i class="fa-solid fa fa-money-bill-wave circle-header center" style="font-size: 20px"></i>
+					<div class="header-font align-center">Économique</div>
+				</div>
+					<div class="header-main flex-between">
+						<i class="fa-solid fa fa-child circle-header center" style="font-size: 20px"></i>
 					<div class="header-font align-center">Familial</div>
 				</div>
 			</div>
 			<!--div2-->
-			<div class="flex-around filter-wrap-mobile margin-filter-responsive">
+				<div class="flex-around filter-wrap-mobile margin-filter-responsive">
 					<div class="header-main flex-between">
-					<i class="fa-solid fa fa-heart circle-header center" style="font-size: 20px"></i>
+						<i class="fa-solid fa fa-heart circle-header center" style="font-size: 20px"></i>
 					<div class="header-font align-center">Romantique</div>
 				</div>
 					<div class="header-main flex-between">
-					<i class="fa-solid fa fa-dog circle-header center" style="font-size: 20px"></i>
+						<i class="fa-solid fa fa-dog circle-header center" style="font-size: 20px"></i>
 					<div class="header-font align-center">Animaux autorisés</div>
 				</div>
 			</div>
 		</div>
-		<section>
+		<div>
 			<div class="center info"> <!--Info-->
   				<div class="icon-circle center">
   					<i class="fa-solid fa fa-info blue-icon fa-xs"></i>
 				</div>
 			<p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
 		</div>
-	</section>
+	</div>
 </header>
 <main>
 <section id="hebergements" class="flex-around"> <!--Section hébergement-->
@@ -71,7 +72,7 @@
 		<h3 style="font-size: 24px">Hébergement à Marseille</h3> <!--Titre-->
 		<div class="apartment-lign-1 flex-evenly"> <!--Première ligne avec 3 cartes-->
 			<div class="apartment-container flex-column-centre"> <!--Carte-->
-				<div class="apartment-img1"></div> <!--Image-->
+				<img class="apartment-img1" src="../images/hebergements/4_small/cannebiere.jpg" alt="auberge cannebiere"/> <!--Image-->
 				<div class="apartment-detail"> <!--Titre,prix,étoiles-->
 					<div><h4>Auberge La Cannebière</h4>
 					<p>Nuit à partir de 25€</p></div>
@@ -85,7 +86,7 @@
 				</div>
 			</div>
 				<div class="apartment-container flex-column-centre">
-					<div class="apartment-img2"></div>
+					<img class="apartment-img1" src="../images/hebergements/4_small/port.jpg" alt="Hotel du port"/>
 					<div class="apartment-detail">
 						<h4>Hôtel du port</h4>
 						<p>Nuit à partir de 52€</p>
@@ -99,7 +100,7 @@
 					</div>
 				</div>
 			<div class="apartment-container flex-column-centre">
-				<div class="apartment-img3"></div>
+				<img class="apartment-img1" src="../images/hebergements/4_small/mouettes.jpg" alt="Hotel les mouettes"/>
 				<div class="apartment-detail">
 					<h4>Hôtel Les mouettes</h4>
 					<p>Nuit à partir de 76€</p>
@@ -115,7 +116,7 @@
 		</div>
 			<div class="apartment-lign-2 flex-evenly"> <!--Seconde ligne avec 3 cartes-->
 			<div class="apartment-container flex-column-centre">
-				<div class="apartment-img4"></div>
+				<img class="apartment-img1" src="../images/hebergements/4_small/mer.jpg" alt="hotel de la mer"/>
 				<div class="apartment-detail">
 					<h4>Hôtel de la mer</h4>
 					<p>Nuit à partir de 46€</p>
@@ -129,7 +130,7 @@
 				</div>
 			</div>
 			<div class="apartment-container flex-column-centre">
-				<div class="apartment-img5"></div>
+				<img class="apartment-img1" src="../images/hebergements/4_small/le_panier.jpg" alt="auberge le panier"/>
 				<div class="apartment-detail">
 					<h4>Auberge Le Panier</h4>
 					<p>Nuit à partir de 23€</p>
@@ -143,7 +144,7 @@
 				</div>
 			</div>
 			<div class="apartment-container flex-column-centre">
-				<div class="apartment-img6"></div>
+				<img class="apartment-img1" src="../images/hebergements/4_small/amina.jpg" alt="hotel amina"/>
 				<div class="apartment-detail">
 					<h4>Hôtel chez Amina</h4>
 					<p>Nuit à partir de 96€</p>
@@ -165,8 +166,8 @@
 				<div><i class="popular-icon fas fa-chart-line fa-2x"></i></div> <!--Icon-->
 			</div>
 				<div class="flex-column-around"> <!--Flex direction column-->
-					<div class="flex-center popular-container popular-container-1-2"> <!--Container de la carte-->
-						<div class="popular-img1"></div> <!--Image-->
+					<div class="center popular-container popular-container-1-2"> <!--Container de la carte-->
+						<img class="popular-img1" src="../images/hebergements/4_small/soleil.jpg" alt="Hotel soleil du matin"/> <!--Image-->
 						<div class="popular-detail"> <!--Titre, prix, étoiles-->
 							<h3>Hôtel Le soleil du matin</h3>
 							<p>Nuit à partir de 128€</p>
@@ -179,8 +180,8 @@
 							</div>
 						</div>
 					</div>
-				<div class="flex-center popular-container popular-container-1-2">
-					<div class="popular-img2"></div>
+				<div class="center popular-container popular-container-1-2">
+					<img class="popular-img1" src="../images/hebergements/4_small/eau.jpg" alt="Chambres d'hotes"/>
 					<div class="popular-detail">
 						<h3>Au coeur de l'eau Chambres d'hôtes</h3>
 						<p>Nuit à partir de 71€</p>
@@ -193,8 +194,8 @@
 						</div>
 					</div>
 				</div>
-			<div class="flex-center popular-container">
-				<div class="popular-img3"></div>
+			<div class="center popular-container">
+				<img class="popular-img1" src="../images/hebergements/4_small/bleu_blanc.jpg" alt="Hotel bleu et blanc"/>
 				<div class="popular-detail">
 					<h3>Hôtel Tout bleu et Blanc</h3>
 					<p>Nuit à partir de 68€</p>
@@ -210,53 +211,53 @@
 		</div>
 	</div>
 </section>
-	<section id="Activites">
-		<section class="activity"> <!--Section activités à Marseille-->
+	<div id="Activites">
+		<div class="activity"> <!--Section activités à Marseille-->
 			<h5 style="font-size: 25px;">Activités à Marseille</h5> <!--Titre-->
 			<div class="activity-block flex-between"> <!--Flexbox de la section entière-->
 				<div class="activity1-size colmun-center"> <!--Première carte de gauche-->
-					<div class="activity-img1"></div> <!--image-->
+					<img class="activity-img1" src="../images/activites/4_small/vieuxport.jpg" alt="hotel amina"/> <!--image-->
 					<div class="activity-title"> <!--Titre de la carte-->
 						<h5 style="font-size: 18px;">Vieux Port</h5> 
 					</div> 
 				</div>
 			<div class="activity-block-other column-between"> <!--Deuxieme et troisieme cartes-->
 				<div class="activity-other colmun-center">
-					<div class="activity-img2"></div>
+					<img class="activity-img2" src="../images/activites/4_small/pomegues.jpg" alt="hotel amina"/> <!--image-->
 					<div class="activity-title">
 						<h5 style="font-size: 18px;">Fort de Pomégues</h5>
 					</div>
 				</div>
 					<div class="activity-other colmun-center">
-						<div class="activity-img3"></div>
+						<img class="activity-img3" src="../images/activites/4_small/frioul.jpg" alt="hotel amina"/> <!--image-->
 					<div class="activity-title">
 						<h5 style="font-size: 18px;">Îles du Frioul</h5>
 					</div>
 				</div>
 			</div>
 				<div class="activity1-size colmun-center">
-					<div class="activity-img4"></div>
+					<img class="activity-img1" src="../images/activites/4_small/calanques.jpg" alt="hotel amina"/> <!--image-->
 					<div class="activity-title">
 						<h5 style="font-size: 18px;">Parc National des Calanques</h5>
 					</div>
 				</div>
 			<div class="activity-block-other column-between">
 				<div class="activity-other colmun-center">
-					<div class="activity-img5"></div>
+					<img class="activity-img2" src="../images/activites/4_small/notredame.jpg" alt="hotel amina"/> <!--image-->
 					<div class="activity-title">
 						<h5 style="font-size: 18px;">Notre-Dame-de-la-Garde</h5>
 					</div>
 				</div>
 					<div class="activity-other colmun-center">
-						<div class="activity-img6"></div>
+						<img class="activity-img3" src="../images/activites/4_small/longchamp.jpg" alt="hotel amina"/> <!--image-->
 						<div class="activity-title">
 							<h5 style="font-size: 18px;">Parc Longchamp</h5>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-	</section>
+		</div>
+	</div>
 </main>
 	<footer>
 		<div class="footer"> <!--Footer-->
