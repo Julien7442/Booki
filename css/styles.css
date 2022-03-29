@@ -16,22 +16,21 @@ box-sizing: border-box;
 }
 
 nav {
-width:90%;  /* center element on page */
+width: 90%;  /* center element on page */
 margin-left:auto;
 margin-right:auto;
 }
 
 header {
-width:90%;  
+width: 90%;  
 margin-left:auto;
 margin-right:auto;
 }
 
-main {
-width:90%;  
+/* main {  
 margin-left:auto;
 margin-right:auto;
-}
+} */
 
 html {  /* Smooth redirection */
 scroll-behavior: smooth;
@@ -41,6 +40,12 @@ scroll-behavior: smooth;
 display: flex;
 justify-content: space-between;
 align-items: center;
+}
+
+.aside-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-evenly {
@@ -121,6 +126,11 @@ color: var(--darkgrey);
 
 .light-grey {
 background-color: var(--grey);
+}
+
+.bloc_page { /* Dimension dekstop */
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* NAV */
@@ -330,6 +340,8 @@ justify-content: center;
 display: flex;
 justify-content: space-around;
 align-items: center;
+gap: 40px;
+flex-direction: row-reverse;
 }
 .apartment-size {
 flex: 2;
@@ -337,6 +349,13 @@ height: 750px;
 margin-right: 20px;
 border-radius: 20px;
 }
+
+.apartment-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding-left: 20px;
+    }
 
 .apartment-block {
 padding-left: 20px;
@@ -359,13 +378,10 @@ margin-bottom: 10px;
 margin-top: 10px;
 }
 
-.apartment-detail {
-width: 90%;
-}
 
 .popular-size h4 {
 margin-top: 45px;
-padding-bottom: 8px;
+padding-bottom: 30px;
 }
 
 .apartment-img1 {
@@ -405,16 +421,15 @@ cursor: pointer;
 /* POPULAR */
 
 .popular-size {
-flex: 1;
-height: 750px;
-margin-left: 20px;
 border-radius: 20px;
+width: 27%;
 }
 
 .popular-block {
 padding-left: 20px;
 padding-right: 20px;
 flex: none;
+height: 750px;
 }
 
 .popular-container {
@@ -422,8 +437,6 @@ background-color: white;
 height: auto;
 padding: 5px;
 border-radius: 20px;
-margin-right: 5%;
-margin-left: 5%;
 }
 
 .popular-container-1-2 {
@@ -431,7 +444,6 @@ margin-bottom: 30px;
 }
 
 .popular-detail {
-width: 40%;
 padding-left: 5%;
 }
 
@@ -461,8 +473,8 @@ margin: 0;
 }
 
 .popular-title {
-padding-left: 35px;
-font-size: 24px;
+font-size: 20px;
+padding-left: 4%;
 }
 
 .popular-icon {
@@ -600,23 +612,16 @@ cursor: pointer;
 
 /* RESPONSIVE */
 
-/* 1400 */
+/* 1100 */
 
-@media screen and (max-width: 1500px) {
-.popular-img3 {
-object-fit: cover;
-background-position: center;
-width: 35%;
-height: 170px;
-border-radius: 15px 0 0 15px;
-}
+@media screen and (max-width: 1100px) {
 .popular-size {
 min-height: auto;
 padding: 20px;
 }
 
 #hebergements {
-flex-direction: column-reverse;
+flex-direction: column;
 width: 100%;
 }
 
@@ -636,53 +641,36 @@ padding: 5%;
 }
 }
 
-/* 1280 */
+/* 1180 */
 
-@media screen and (max-width: 1328px) {
-.popular-size {
-min-height: auto;
-padding: 20px;
+@media all and (max-width: 1180px) {
+    .bloc_page {
+        width: 100%;
+      }
+    }
+
+/* 1092 */
+
+@media screen and (max-width: 1094px) {
+    .filter-main {
+    gap: 15px;
+    }
+    .popular-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
-#hebergements {
-flex-direction: column-reverse;
-width: 100%;
-}
+/* 992 */
 
-.popular-block {
-flex: none;
-width: 100%;
-margin-left: 0;
-padding: 0;
-}
-
-.apartment-block {
-flex: none;
-width: 100%;
-margin-right: 0;
-margin-top: 50px;
-padding: 5%;
-}
-}
-/* 1078 FILTERS */
-
-@media screen and (max-width: 1078px) {
-.margin-filter-responsive {
-margin: 10px;
-}
-} 
-
-/* 848 */
-
-
-@media screen and (max-width: 848px) {
+@media screen and (max-width: 992px) {
 .apartment-size {
 min-height: auto;
 padding: 20px;
 }
 .apartment-block {
 flex: none;
-width: 100%;
+width: 95%;
 margin-right: 0;
 margin-top: 50px;
 height: auto;
@@ -695,7 +683,7 @@ padding-bottom: 15px;
 }
 
 .show-more {
-padding-left: 0;
+padding-left: 15px;
 }
 
 .apartment-lign-1 {   
@@ -717,11 +705,11 @@ flex-direction: column;
 height: auto;
 }
 .activity1-size {
-width: 100%;
+width: 90%;
 margin-bottom: 50px;
 }
 .activity-block-other {
-width: 100%;
+width: 90%;
 height: auto;
 }
 .activity-other {
@@ -730,12 +718,23 @@ margin-bottom: 50px;
 .activity-img1, .activity-img2, .activity-img3 {
 height: 200px;
 }
+.activity h5 {
+    padding-left: 50px;
+    }
+    .popular-block {
+        flex: none;
+        width: 90%;
+        margin-left: 0;
+        padding: 0;
+        }
+    #hebergements {
+        gap: 0;
+    }
 }
 
 /* MOBILE 768 */
 
 @media screen and (max-width: 768px) {
-
 html,body {
 margin: 0;
 padding: 0;
@@ -774,9 +773,4 @@ margin: 5%;
 }
 }
 
-/* MOBILE 600 */
 
-.activity-block {
-margin: 5%;
-width: 90%;
-}
